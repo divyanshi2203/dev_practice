@@ -1,4 +1,4 @@
-from flask import Flask,jsonify
+from flask import Flask,jsonify,request
 
 app = Flask(__name__)
 
@@ -10,6 +10,15 @@ def home():
 def evara():
     return jsonify(Mommy = "Divu",
             Daddy = "sagar"),201
-
+@app.route("/child")
+def baby():
+    name = request.args.get("name")
+    diff = int(request.args.get("diff"))
+    if diff>3:
+        return jsonify(message= f"our daughter name will be {name}")
+    elif diff <= 3 and diff > 5:
+        return jsonify(message = f"our son will be named as {name}")
+    else:
+        return "Sorry, we are not planning for a baby anymore.!!!"
 if __name__ == "__main__":
     app.run(debug=True)
