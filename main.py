@@ -59,7 +59,7 @@ session = Session()
 '''Select * from employees'''
 
 '''This part is about updating the data'''
-# print("update part\n")
+#print("update part\n")
 # query = session.get(Employees, 2)
 # print(query.name,query.position)
 # query.name= "Divyanshi baby"
@@ -83,3 +83,5 @@ session = Session()
 query = session.query(Employees).all()  #getting all at once
 for employee in query:
     print(f'id: {employee.id}, Name: {employee.name}, Position: {employee.position}' )
+def add(a,b):
+    return a+b
