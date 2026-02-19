@@ -1,0 +1,21 @@
+class Solution:
+    def subarraySum(self, nums: List[int], k: int) -> int:
+        pref_sum = {}
+        count = 0
+        p = 0
+        pref_sum[0] = 1
+
+        for i in range(len(nums)):
+            p+=nums[i]
+            if pref_sum.get(p-k):
+                count+=pref_sum.get(p-k)
+
+            if pref_sum.get(p):
+                pref_sum[p]+=1
+            else :
+                pref_sum[p]=1
+
+        return count
+
+
+           
