@@ -23,5 +23,6 @@ def baby():
 @app.route("/couple/<string:husband>/<string:wife>")
 def couple(husband:str,wife:str):
     return jsonify(message=f"{husband} is a husband of {wife}")
+print("Hey baby")
 if __name__ == "__main__":
     app.run(debug=True)
