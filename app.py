@@ -25,6 +25,7 @@ def couple(husband:str,wife:str):
     return jsonify(message=f"{husband} is a husband of {wife}")
 print("Hey baby")
 print("hey")
+print("No pull request")
 
 if __name__ == "__main__":
     app.run(debug=True)
