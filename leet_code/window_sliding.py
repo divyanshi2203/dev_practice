@@ -9,6 +9,6 @@ while(r<len(l)-1):
     window_sum -= l[le]
     le+=1
     #right
-    r5+=1
+    r+=1
     window_sum +=l[r]
 print(max(window_sum,max_sum))
