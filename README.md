@@ -1,3 +1,2 @@
 # dev_practice
-A repository to practice development
-With python.
+A repository to practice development.
