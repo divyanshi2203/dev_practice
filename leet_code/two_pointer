@@ -10,3 +10,4 @@ def check_reverse(x):
 
 list1 = input("Enter the values: ").strip().split()
 print(check_reverse(list1))
+print("test check")
